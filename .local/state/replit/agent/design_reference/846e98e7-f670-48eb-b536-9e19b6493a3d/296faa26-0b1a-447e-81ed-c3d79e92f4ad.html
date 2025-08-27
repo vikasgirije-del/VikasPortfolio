@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Giri - Graphic Designer & Video Editor</title>
+    <meta name="description" content="Portfolio of Vikas Giri, Graphic Designer & Video Editor from Mumbai, India. Specializing in branding, typography, motion graphics, and visual design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    popover: {
+                        DEFAULT: "var(--popover)",
+                        foreground: "var(--popover-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    destructive: {
+                        DEFAULT: "var(--destructive)",
+                        foreground: "var(--destructive-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    sans: ["var(--font-sans)"],
+                    serif: ["var(--font-serif)"],
+                    mono: ["var(--font-mono)"],
+                }
+            },
+        }
+    };
+    </script>
+    <style>
+        :root {
+            --background: hsl(0 0% 100%);
+            --foreground: hsl(0 0% 0%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(0 0% 0%);
+            --popover: hsl(0 0% 100%);
+            --popover-foreground: hsl(0 0% 0%);
+            --primary: hsl(16 100% 60%);
+            --primary-foreground: hsl(0 0% 100%);
+            --secondary: hsl(210 40% 96%);
+            --secondary-foreground: hsl(0 0% 0%);
+            --muted: hsl(210 40% 96%);
+            --muted-foreground: hsl(215 25% 46%);
+            --accent: hsl(16 100% 60%);
+            --accent-foreground: hsl(0 0% 100%);
+            --destructive: hsl(0 84% 60%);
+            --destructive-foreground: hsl(0 0% 100%);
+            --border: hsl(214 32% 91%);
+            --input: hsl(214 32% 91%);
+            --ring: hsl(16 100% 60%);
+            --radius: 0.5rem;
+            --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            color: var(--foreground);
+            background-color: var(--background);
+        }
+
+        .hero-text {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+<body>
+    <!-- @COMPONENT: Header [Fixed navigation with logo and menu] -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
+        <nav class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- @COMPONENT: Logo [VG initials] -->
+                <div class="text-2xl font-bold text-foreground">
+                    VG
+                </div>
+                
+                <!-- @COMPONENT: Navigation [Desktop menu] -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-foreground hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="#work" class="text-foreground hover:text-primary transition-colors duration-200">Work</a>
+                    <a href="#experience" class="text-foreground hover:text-primary transition-colors duration-200">Experience</a>
+                    <a href="#contact" class="text-foreground hover:text-primary transition-colors duration-200">Contact</a>
+                </div>
+
+                <!-- @COMPONENT: MobileMenu [Mobile hamburger menu] -->
+                <button class="md:hidden text-foreground" data-event="click:toggleMobileMenu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: Hero [Main introduction section] -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-8">
+                <div class="text-base text-muted-foreground mb-4">👋 Hi there, I'm Vikas Giri</div>
+                <h1 class="hero-text font-light text-foreground mb-6">
+                    Graphic Designer<br>
+                    <span class="font-medium text-primary">&</span> Video Editor
+                </h1>
+                <p class="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
+                    Based in Mumbai, India. Crafting impactful visuals for digital, print & motion with 3+ years of experience in advertising and media production.
+                </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#work" 
+                   class="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105">
+                    View Portfolio
+                </a>
+                <a href="#" 
+                   data-implementation="Download PDF resume functionality"
+                   class="border border-border text-foreground px-8 py-3 rounded-lg font-medium hover:bg-secondary transition-all duration-200">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero -->
+
+    <!-- @COMPONENT: Portfolio [Work showcase section] -->
+    <section id="work" class="py-20 bg-secondary/30">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-light text-foreground mb-4">Selected Work</h2>
+                <p class="text-lg text-muted-foreground">A collection of projects showcasing design expertise</p>
+            </div>
+
+            <!-- @MAP: portfolioItems.map(item => ( -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Social Media Design Project -->
+                <div class="group cursor-pointer" data-event="click:openPortfolioModal">
+                    <div class="aspect-square bg-card rounded-lg overflow-hidden shadow-sm group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                        <!-- High-quality social media design with bold typography and vibrant colors -->
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a27732197985085.6639e8e131894.png" 
+                             alt="Social Media Design Portfolio" 
+                             class="w-full h-full object-cover"
+                             data-mock="true" />
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-medium text-foreground">Social Media Design</h3>
+                        <p class="text-sm text-muted-foreground">Brand identity & digital campaigns</p>
+                    </div>
+                </div>
+
+                <!-- Branding & Visual Identity -->
+                <div class="group cursor-pointer" data-event="click:openPortfolioModal">
+                    <div class="aspect-square bg-card rounded-lg overflow-hidden shadow-sm group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                        <!-- Modern branding design with clean layout and professional typography -->
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/030e9b197985085.6684e10e6c547.png" 
+                             alt="Branding and Visual Identity Design" 
+                             class="w-full h-full object-cover"
+                             data-mock="true" />
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-medium text-foreground">Brand Identity</h3>
+                        <p class="text-sm text-muted-foreground">Visual identity & logo design</p>
+                    </div>
+                </div>
+
+                <!-- Print Design & Marketing -->
+                <div class="group cursor-pointer" data-event="click:openPortfolioModal">
+                    <div class="aspect-square bg-card rounded-lg overflow-hidden shadow-sm group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                        <!-- Print design showcasing creative layouts and professional presentation -->
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e9da93197985085.6639e8e134abd.png" 
+                             alt="Print Design and Marketing Materials" 
+                             class="w-full h-full object-cover"
+                             data-mock="true" />
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-medium text-foreground">Print Design</h3>
+                        <p class="text-sm text-muted-foreground">Marketing materials & packaging</p>
+                    </div>
+                </div>
+
+                <!-- Digital Campaigns -->
+                <div class="group cursor-pointer" data-event="click:openPortfolioModal">
+                    <div class="aspect-square bg-card rounded-lg overflow-hidden shadow-sm group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                        <!-- Digital campaign design with modern aesthetic and engaging visuals -->
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7317cf197985085.6639e8e130a48.png" 
+                             alt="Digital Campaign Design" 
+                             class="w-full h-full object-cover"
+                             data-mock="true" />
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-medium text-foreground">Digital Campaigns</h3>
+                        <p class="text-sm text-muted-foreground">Web banners & digital advertising</p>
+                    </div>
+                </div>
+
+                <!-- Typography & Layout -->
+                <div class="group cursor-pointer" data-event="click:openPortfolioModal">
+                    <div class="aspect-square bg-card rounded-lg overflow-hidden shadow-sm group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                        <!-- Typography-focused design showcasing layout skills and type hierarchy -->
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/24fe02197985085.6639e8e132652.png" 
+                             alt="Typography and Layout Design" 
+                             class="w-full h-full object-cover"
+                             data-mock="true" />
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-medium text-foreground">Typography Design</h3>
+                        <p class="text-sm text-muted-foreground">Editorial & layout design</p>
+                    </div>
+                </div>
+
+                <!-- Motion Graphics -->
+                <div class="group cursor-pointer" data-event="click:openPortfolioModal">
+                    <div class="aspect-square bg-card rounded-lg overflow-hidden shadow-sm group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                        <!-- Motion graphics design with dynamic visual elements -->
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6587fd197985085.6639e8e131402.png" 
+                             alt="Motion Graphics and Video Design" 
+                             class="w-full h-full object-cover"
+                             data-mock="true" />
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-medium text-foreground">Motion Graphics</h3>
+                        <p class="text-sm text-muted-foreground">Video editing & animation</p>
+                    </div>
+                </div>
+            </div>
+            <!-- @END_MAP )) -->
+
+            <div class="text-center mt-12">
+                <a href="https://www.behance.net/gallery/197985085/Portfolio-2025-Graphic-Design" 
+                   target="_blank"
+                   class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors duration-200">
+                    View complete portfolio on Behance
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Portfolio -->
+
+    <!-- @COMPONENT: Experience [Work timeline section] -->
+    <section id="experience" class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-light text-foreground mb-4">Experience</h2>
+                <p class="text-lg text-muted-foreground">Professional journey in design and media</p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Current Position -->
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <div class="text-sm text-muted-foreground font-medium">Aug 2024 - Present</div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-medium text-foreground mb-2">Graphic Designer & Production Assistant</h3>
+                        <div class="text-primary font-medium mb-3">Mega Sign Pte. Ltd.</div>
+                        <p class="text-muted-foreground">Creating artworks for CNC machines, laser cutters, and large-format CMYK printing. Specializing in signage design and production workflows for metal fabrication.</p>
+                    </div>
+                </div>
+
+                <!-- Previous Roles -->
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <div class="text-sm text-muted-foreground font-medium">Nov 2022 - Jul 2024</div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-medium text-foreground mb-2">Graphic Designer</h3>
+                        <div class="text-primary font-medium mb-3">Filling The Blanks</div>
+                        <p class="text-muted-foreground">Designed diverse graphic projects including social media content, mobile banners, print posters, and web banners. Ensured brand consistency and engaged target audiences effectively.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <div class="text-sm text-muted-foreground font-medium">Nov 2021 - Jul 2023</div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-medium text-foreground mb-2">Graphic Design Intern</h3>
+                        <div class="text-primary font-medium mb-3">IELTSMaterial.com</div>
+                        <p class="text-muted-foreground">Designed book covers, meetup presentations, course content, social media posts, and web banners for educational content platform.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <div class="text-sm text-muted-foreground font-medium">Dec 2020 - Feb 2021</div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-medium text-foreground mb-2">Graphic Design Intern</h3>
+                        <div class="text-primary font-medium mb-3">Curie Robotics</div>
+                        <p class="text-muted-foreground">Designed flyers, brochures, booklets and kit packaging, videos for robotic kits and online classes in the educational technology sector.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="mt-20">
+                <h3 class="text-2xl font-light text-foreground mb-8 text-center">Skills & Expertise</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-foreground font-medium mb-2">Design Skills</div>
+                        <div class="space-y-1 text-sm text-muted-foreground">
+                            <div>Branding</div>
+                            <div>Typography</div>
+                            <div>Packaging Design</div>
+                            <div>Signage Design</div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-foreground font-medium mb-2">Digital Media</div>
+                        <div class="space-y-1 text-sm text-muted-foreground">
+                            <div>Social Media Design</div>
+                            <div>Image Editing</div>
+                            <div>Print Design</div>
+                            <div>Motion Graphics</div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-foreground font-medium mb-2">Software</div>
+                        <div class="space-y-1 text-sm text-muted-foreground">
+                            <div>Photoshop</div>
+                            <div>Illustrator</div>
+                            <div>Premier Pro</div>
+                            <div>After Effects</div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-foreground font-medium mb-2">Technical</div>
+                        <div class="space-y-1 text-sm text-muted-foreground">
+                            <div>Lightroom</div>
+                            <div>Artcam</div>
+                            <div>CNC Design</div>
+                            <div>CMYK Printing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Experience -->
+
+    <!-- @COMPONENT: Contact [Contact information and form] -->
+    <section id="contact" class="py-20 bg-secondary/30">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-light text-foreground mb-6">Let's Collaborate</h2>
+            <p class="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+                Ready to bring your visual ideas to life? I'm available for freelance projects and full-time opportunities.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-medium text-foreground mb-4">Get in Touch</h3>
+                    <div class="space-y-3 text-muted-foreground">
+                        <div class="flex items-center justify-center md:justify-start">
+                            <svg class="w-5 h-5 mr-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <a href="mailto:vikasgirije@gmail.com" class="hover:text-primary transition-colors duration-200">
+                                vikasgirije@gmail.com
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start">
+                            <svg class="w-5 h-5 mr-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <a href="tel:+917300907766" class="hover:text-primary transition-colors duration-200">
+                                +91 7300907766
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start">
+                            <svg class="w-5 h-5 mr-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-medium text-foreground mb-4">Find Me Online</h3>
+                    <div class="flex justify-center md:justify-start space-x-6">
+                        <a href="https://www.behance.net/vikas_goswami" 
+                           target="_blank"
+                           class="text-muted-foreground hover:text-primary transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/vikas-giri" 
+                           target="_blank"
+                           data-mock="true"
+                           class="text-muted-foreground hover:text-primary transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:vikasgirije@gmail.com" 
+                           class="text-muted-foreground hover:text-primary transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-border pt-8">
+                <p class="text-muted-foreground text-sm">
+                    Currently pursuing M.A. in Entertainment, Media & Advertising at Mumbai University<br>
+                    Available for freelance projects and full-time opportunities
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact -->
+
+    <!-- @COMPONENT: Footer [Simple footer with copyright] -->
+    <footer class="py-8 border-t border-border">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="text-sm text-muted-foreground">
+                © 2025 Vikas Giri. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement smooth scrolling navigation
+        // TODO: Implement mobile menu toggle functionality
+        // TODO: Implement portfolio modal for viewing larger images
+        // TODO: Implement resume download functionality
+        // TODO: Add form validation and email integration for contact form
+        
+        (function() {
+            // Simple scroll-to-top on page load
+            document.addEventListener('DOMContentLoaded', function() {
+                window.scrollTo(0, 0);
+            });
+
+            // Add active states for navigation
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            const sections = document.querySelectorAll('section[id]');
+
+            function updateActiveNav() {
+                const scrollPos = window.scrollY + 100;
+                
+                sections.forEach(section => {
+                    const top = section.offsetTop;
+                    const bottom = top + section.offsetHeight;
+                    const id = section.getAttribute('id');
+                    
+                    if (scrollPos >= top && scrollPos <= bottom) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('text-primary');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('text-primary');
+                            }
+                        });
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveNav);
+            updateActiveNav();
+        })();
+    </script>
+</body>
+</html>

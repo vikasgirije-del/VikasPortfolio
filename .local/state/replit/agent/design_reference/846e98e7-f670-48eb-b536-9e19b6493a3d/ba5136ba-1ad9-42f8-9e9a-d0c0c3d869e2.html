@@ -1,0 +1,773 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Giri - Graphic Designer & Video Editor | Creative Portfolio</title>
+    <meta name="description" content="Professional graphic designer and video editor specializing in branding, motion graphics, and digital campaigns. Available for remote work opportunities.">
+    <meta name="keywords" content="Graphic Designer, Video Editor, Portfolio, Branding, Motion Graphics, Remote Work, Creative Design">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    border: "var(--border)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                    serif: ['Playfair Display', 'serif'],
+                },
+                animation: {
+                    'float': 'float 6s ease-in-out infinite',
+                    'glow': 'glow 2s ease-in-out infinite alternate',
+                    'slide-up': 'slideUp 0.8s ease-out forwards',
+                    'fade-in': 'fadeIn 1s ease-out forwards',
+                }
+            },
+        }
+    };
+    </script>
+    <style>
+        :root {
+            --background: hsl(220 15% 97%);
+            --foreground: hsl(220 20% 15%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(220 20% 15%);
+            --primary: hsl(267 84% 68%);
+            --primary-foreground: hsl(0 0% 100%);
+            --secondary: hsl(310 100% 85%);
+            --secondary-foreground: hsl(220 20% 15%);
+            --muted: hsl(220 15% 96%);
+            --muted-foreground: hsl(220 10% 45%);
+            --accent: hsl(200 100% 80%);
+            --accent-foreground: hsl(220 20% 15%);
+            --border: hsl(220 15% 90%);
+            --ring: hsl(267 84% 68%);
+            --radius: 1rem;
+        }
+        
+        .dark {
+            --background: hsl(240 15% 8%);
+            --foreground: hsl(220 15% 95%);
+            --card: hsl(240 15% 12%);
+            --card-foreground: hsl(220 15% 95%);
+            --primary: hsl(267 70% 65%);
+            --primary-foreground: hsl(0 0% 100%);
+            --secondary: hsl(310 80% 70%);
+            --secondary-foreground: hsl(220 15% 95%);
+            --muted: hsl(240 15% 15%);
+            --muted-foreground: hsl(220 10% 60%);
+            --accent: hsl(200 80% 70%);
+            --accent-foreground: hsl(220 15% 95%);
+            --border: hsl(240 15% 20%);
+            --ring: hsl(267 70% 65%);
+        }
+
+        .glass {
+            backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        
+        .dark .glass {
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+            to { box-shadow: 0 0 30px rgba(139, 92, 246, 0.6); }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, 
+                hsl(267 84% 68% / 0.1) 0%, 
+                hsl(310 100% 85% / 0.1) 25%, 
+                hsl(200 100% 80% / 0.1) 50%, 
+                hsl(267 84% 68% / 0.1) 75%, 
+                hsl(310 100% 85% / 0.1) 100%);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, 
+                hsl(267 84% 68%) 0%, 
+                hsl(310 100% 85%) 50%, 
+                hsl(200 100% 80%) 100%);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--muted);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-background text-foreground font-sans antialiased transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">VG</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#hero" class="nav-link text-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#about" class="nav-link text-muted-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#portfolio" class="nav-link text-muted-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium">Portfolio</a>
+                        <a href="#experience" class="nav-link text-muted-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium">Experience</a>
+                        <a href="#contact" class="nav-link text-muted-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-muted hover:bg-accent transition-colors duration-200">
+                        <i class="fas fa-sun dark:hidden text-foreground"></i>
+                        <i class="fas fa-moon hidden dark:block text-foreground"></i>
+                    </button>
+                    <button class="md:hidden p-2 rounded-lg bg-muted hover:bg-accent transition-colors duration-200">
+                        <i class="fas fa-bars text-foreground"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+        <div class="absolute inset-0 gradient-bg"></div>
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl animate-float"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-secondary/20 rounded-full mix-blend-multiply filter blur-xl animate-float" style="animation-delay: 2s;"></div>
+            <div class="absolute bottom-20 left-1/2 w-72 h-72 bg-accent/20 rounded-full mix-blend-multiply filter blur-xl animate-float" style="animation-delay: 4s;"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">
+                    <span class="block text-foreground">Vikas Giri</span>
+                    <span class="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                        Designer & Editor
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Crafting impactful visuals for digital, print & motion that tell your brand's story
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#portfolio" class="group relative px-8 py-4 bg-primary text-primary-foreground rounded-2xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25">
+                        <span class="relative z-10">View Portfolio</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </a>
+                    <a href="#" class="px-8 py-4 border-2 border-border text-foreground rounded-2xl font-semibold transition-all duration-300 hover:bg-muted hover:border-primary">
+                        <i class="fas fa-download mr-2"></i>Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-muted/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">About Me</h2>
+                <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Passionate creative with a Master's in Entertainment, Media & Advertising and 3+ years of hands-on experience
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-up">
+                    <div class="glass rounded-3xl p-8 border border-border">
+                        <h3 class="text-2xl font-serif font-semibold mb-6 text-foreground">My Journey</h3>
+                        <p class="text-muted-foreground leading-relaxed mb-6">
+                            With a Master's degree in Entertainment, Media & Advertising and over 3 years of professional experience, 
+                            I specialize in creating compelling visual narratives that bridge the gap between creativity and commercial success.
+                        </p>
+                        <p class="text-muted-foreground leading-relaxed">
+                            From signage design to motion graphics, I've worked with diverse clients across industries, 
+                            always focusing on delivering solutions that not only look great but drive results.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="animate-slide-up" style="animation-delay: 0.2s;">
+                    <h3 class="text-2xl font-serif font-semibold mb-8 text-foreground">Skills & Expertise</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass rounded-2xl p-6 border border-border hover:border-primary transition-colors duration-300 group">
+                            <i class="fas fa-palette text-primary text-2xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                            <h4 class="font-semibold text-foreground mb-2">Branding</h4>
+                            <p class="text-sm text-muted-foreground">Logo design, brand identity, visual guidelines</p>
+                        </div>
+                        <div class="glass rounded-2xl p-6 border border-border hover:border-primary transition-colors duration-300 group">
+                            <i class="fas fa-font text-secondary text-2xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                            <h4 class="font-semibold text-foreground mb-2">Typography</h4>
+                            <p class="text-sm text-muted-foreground">Custom lettering, typeface selection</p>
+                        </div>
+                        <div class="glass rounded-2xl p-6 border border-border hover:border-primary transition-colors duration-300 group">
+                            <i class="fas fa-play text-accent text-2xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                            <h4 class="font-semibold text-foreground mb-2">Motion Graphics</h4>
+                            <p class="text-sm text-muted-foreground">After Effects, video editing, animations</p>
+                        </div>
+                        <div class="glass rounded-2xl p-6 border border-border hover:border-primary transition-colors duration-300 group">
+                            <i class="fas fa-sign text-primary text-2xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                            <h4 class="font-semibold text-foreground mb-2">Signage Design</h4>
+                            <p class="text-sm text-muted-foreground">Environmental graphics, wayfinding</p>
+                        </div>
+                        <div class="glass rounded-2xl p-6 border border-border hover:border-primary transition-colors duration-300 group">
+                            <i class="fab fa-adobe text-secondary text-2xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                            <h4 class="font-semibold text-foreground mb-2">Adobe Suite</h4>
+                            <p class="text-sm text-muted-foreground">Photoshop, Illustrator, InDesign, After Effects</p>
+                        </div>
+                        <div class="glass rounded-2xl p-6 border border-border hover:border-primary transition-colors duration-300 group">
+                            <i class="fas fa-video text-accent text-2xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                            <h4 class="font-semibold text-foreground mb-2">Video Editing</h4>
+                            <p class="text-sm text-muted-foreground">Premiere Pro, Final Cut, DaVinci Resolve</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">Portfolio</h2>
+                <p class="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+                    A collection of my latest creative works spanning branding, digital campaigns, and motion graphics
+                </p>
+                <a href="https://www.behance.net/gallery/197985085/Portfolio-2025-Graphic-Design" target="_blank" class="inline-flex items-center text-primary hover:text-secondary transition-colors duration-200">
+                    <i class="fab fa-behance mr-2"></i>View Full Portfolio on Behance
+                    <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group portfolio-item cursor-pointer" data-project="1">
+                    <div class="glass rounded-3xl overflow-hidden border border-border hover:border-primary transition-all duration-300 hover:scale-105">
+                        <!-- Modern branding project with vibrant colors and clean typography -->
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Brand identity design project" class="w-full h-64 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">Brand Identity Design</h3>
+                            <p class="text-muted-foreground text-sm mb-4">Complete brand identity for tech startup including logo, business cards, and guidelines</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs">Branding</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs">Logo Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group portfolio-item cursor-pointer" data-project="2">
+                    <div class="glass rounded-3xl overflow-hidden border border-border hover:border-primary transition-all duration-300 hover:scale-105">
+                        <!-- Motion graphics and video editing project -->
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Motion graphics animation project" class="w-full h-64 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">Motion Graphics Campaign</h3>
+                            <p class="text-muted-foreground text-sm mb-4">Animated promotional video with custom graphics and sound design for social media</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs">Motion Graphics</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs">Video Editing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group portfolio-item cursor-pointer" data-project="3">
+                    <div class="glass rounded-3xl overflow-hidden border border-border hover:border-primary transition-all duration-300 hover:scale-105">
+                        <!-- Typography and print design project -->
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Typography design and book cover project" class="w-full h-64 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">Book Cover Design</h3>
+                            <p class="text-muted-foreground text-sm mb-4">Custom typography and illustration for educational book series including digital formats</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs">Typography</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs">Print Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group portfolio-item cursor-pointer" data-project="4">
+                    <div class="glass rounded-3xl overflow-hidden border border-border hover:border-primary transition-all duration-300 hover:scale-105">
+                        <!-- Digital campaign and social media design -->
+                        <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Digital marketing campaign design" class="w-full h-64 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">Digital Campaign</h3>
+                            <p class="text-muted-foreground text-sm mb-4">Social media graphics and banner designs for multi-platform marketing campaign</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs">Digital Design</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs">Social Media</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="group portfolio-item cursor-pointer" data-project="5">
+                    <div class="glass rounded-3xl overflow-hidden border border-border hover:border-primary transition-all duration-300 hover:scale-105">
+                        <!-- Signage and environmental design -->
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Signage and environmental design project" class="w-full h-64 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">Signage Design</h3>
+                            <p class="text-muted-foreground text-sm mb-4">Custom signage and wayfinding system for commercial space with CNC and laser cutting</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs">Signage</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs">Environmental</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="group portfolio-item cursor-pointer" data-project="6">
+                    <div class="glass rounded-3xl overflow-hidden border border-border hover:border-primary transition-all duration-300 hover:scale-105">
+                        <!-- Packaging design project -->
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Product packaging design project" class="w-full h-64 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">Packaging Design</h3>
+                            <p class="text-muted-foreground text-sm mb-4">Educational product packaging with sustainable materials and child-friendly design</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs">Packaging</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs">Product Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-muted/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">Experience & Clients</h2>
+                <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Trusted by leading companies across various industries
+                </p>
+            </div>
+            
+            <div class="relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-border"></div>
+                
+                <!-- Experience Item 1 -->
+                <div class="relative flex items-center mb-12">
+                    <div class="flex-1 pr-8 text-right">
+                        <div class="glass rounded-2xl p-6 border border-border">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">Mega Sign Pte. Ltd.</h3>
+                            <p class="text-muted-foreground mb-3">Signage Designer & CNC Specialist</p>
+                            <p class="text-sm text-muted-foreground">
+                                Created custom signage solutions, CNC artwork, and laser cutting designs for commercial and retail spaces.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
+                    <div class="flex-1 pl-8">
+                        <div class="glass rounded-2xl p-4 border border-border">
+                            <!-- Company logo placeholder -->
+                            <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                                <i class="fas fa-industry text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience Item 2 -->
+                <div class="relative flex items-center mb-12">
+                    <div class="flex-1 pr-8">
+                        <div class="glass rounded-2xl p-4 border border-border">
+                            <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
+                                <i class="fas fa-pencil-alt text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-background"></div>
+                    <div class="flex-1 pl-8">
+                        <div class="glass rounded-2xl p-6 border border-border">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">Filling The Blanks</h3>
+                            <p class="text-muted-foreground mb-3">Social Media Designer</p>
+                            <p class="text-sm text-muted-foreground">
+                                Designed social media graphics, banner campaigns, and digital marketing materials for various client brands.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience Item 3 -->
+                <div class="relative flex items-center mb-12">
+                    <div class="flex-1 pr-8 text-right">
+                        <div class="glass rounded-2xl p-6 border border-border">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">IELTSMaterial.com</h3>
+                            <p class="text-muted-foreground mb-3">Educational Design Specialist</p>
+                            <p class="text-sm text-muted-foreground">
+                                Created book covers, digital campaign materials, and educational graphics for IELTS preparation resources.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background"></div>
+                    <div class="flex-1 pl-8">
+                        <div class="glass rounded-2xl p-4 border border-border">
+                            <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-xl flex items-center justify-center">
+                                <i class="fas fa-book text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience Item 4 -->
+                <div class="relative flex items-center">
+                    <div class="flex-1 pr-8">
+                        <div class="glass rounded-2xl p-4 border border-border">
+                            <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                                <i class="fas fa-robot text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
+                    <div class="flex-1 pl-8">
+                        <div class="glass rounded-2xl p-6 border border-border">
+                            <h3 class="text-xl font-semibold text-foreground mb-2">Curie Robotics</h3>
+                            <p class="text-muted-foreground mb-3">Packaging & Educational Designer</p>
+                            <p class="text-sm text-muted-foreground">
+                                Developed packaging design and educational materials for robotics products targeting children and educators.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">Let's Work Together</h2>
+                <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Ready to bring your next project to life? Get in touch and let's create something amazing together.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="glass rounded-3xl p-8 border border-border">
+                        <h3 class="text-2xl font-serif font-semibold mb-6 text-foreground">Send a Message</h3>
+                        <form class="space-y-6" data-implementation="Integrate with EmailJS for direct Gmail delivery">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-foreground mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-muted border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200" placeholder="Your name" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-muted border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200" placeholder="your@email.com" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-foreground mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-muted border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 resize-none" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-primary-foreground py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="glass rounded-3xl p-8 border border-border">
+                        <h3 class="text-2xl font-serif font-semibold mb-6 text-foreground">Get In Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-foreground">Email</p>
+                                    <p class="text-muted-foreground">vikas.giri@email.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-clock text-secondary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-foreground">Availability</p>
+                                    <p class="text-muted-foreground">Available for freelance & remote work</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-globe text-accent"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-foreground">Location</p>
+                                    <p class="text-muted-foreground">Open to worldwide opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass rounded-3xl p-8 border border-border">
+                        <h3 class="text-xl font-semibold mb-4 text-foreground">Connect With Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://linkedin.com/in/vikasgiri" target="_blank" class="w-12 h-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-200">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.behance.net/gallery/197985085/Portfolio-2025-Graphic-Design" target="_blank" class="w-12 h-12 bg-secondary text-secondary-foreground rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-200">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="https://instagram.com/vikasgiri" target="_blank" class="w-12 h-12 bg-accent text-accent-foreground rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-200">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:vikas.giri@email.com" class="w-12 h-12 bg-muted text-muted-foreground rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-200">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Hire Me Button -->
+    <div class="fixed bottom-8 right-8 z-40">
+        <a href="mailto:vikas.giri@email.com?subject=Project Inquiry" class="group relative">
+            <div class="bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-glow">
+                <i class="fas fa-handshake mr-2"></i>Hire Me
+            </div>
+        </a>
+    </div>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="glass max-w-4xl w-full max-h-[90vh] overflow-auto rounded-3xl border border-border">
+            <div class="relative p-8">
+                <button id="close-modal" class="absolute top-4 right-4 w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-200">
+                    <i class="fas fa-times text-foreground"></i>
+                </button>
+                <div id="modal-content">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            // Theme toggle functionality
+            const themeToggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+            
+            // Check for saved theme preference or default to light mode
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            html.classList.toggle('dark', savedTheme === 'dark');
+            
+            themeToggle.addEventListener('click', () => {
+                html.classList.toggle('dark');
+                const newTheme = html.classList.contains('dark') ? 'dark' : 'light';
+                localStorage.setItem('theme', newTheme);
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Active navigation highlighting
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            function updateActiveNav() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.clientHeight;
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('text-foreground');
+                    link.classList.add('text-muted-foreground');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.remove('text-muted-foreground');
+                        link.classList.add('text-foreground');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', updateActiveNav);
+            updateActiveNav();
+
+            // Portfolio modal functionality
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            const modal = document.getElementById('portfolio-modal');
+            const modalContent = document.getElementById('modal-content');
+            const closeModal = document.getElementById('close-modal');
+
+            const projectData = {
+                1: {
+                    title: "Brand Identity Design",
+                    description: "Complete brand identity for tech startup including logo, business cards, and comprehensive brand guidelines. This project involved extensive research into the target market and competitive landscape to create a unique visual identity that stands out in the technology sector.",
+                    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
+                    behanceLink: "https://www.behance.net/gallery/197985085/Portfolio-2025-Graphic-Design",
+                    tags: ["Branding", "Logo Design", "Print Design", "Guidelines"]
+                },
+                2: {
+                    title: "Motion Graphics Campaign",
+                    description: "Animated promotional video with custom graphics and sound design for social media platforms. The project required creating engaging visuals that work across multiple formats and screen sizes while maintaining brand consistency.",
+                    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
+                    behanceLink: "https://www.behance.net/gallery/197985085/Portfolio-2025-Graphic-Design",
+                    tags: ["Motion Graphics", "Video Editing", "Animation", "Social Media"]
+                },
+                // Add more project data as needed
+            };
+
+            portfolioItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const projectId = item.getAttribute('data-project');
+                    const project = projectData[projectId];
+                    
+                    if (project) {
+                        modalContent.innerHTML = `
+                            <img src="${project.image}" alt="${project.title}" class="w-full h-64 md:h-80 object-cover rounded-2xl mb-6" />
+                            <h3 class="text-3xl font-serif font-bold text-foreground mb-4">${project.title}</h3>
+                            <p class="text-muted-foreground mb-6 leading-relaxed">${project.description}</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                ${project.tags.map(tag => `<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">${tag}</span>`).join('')}
+                            </div>
+                            <a href="${project.behanceLink}" target="_blank" class="inline-flex items-center bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors duration-200">
+                                <i class="fab fa-behance mr-2"></i>View on Behance
+                                <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                        `;
+                        modal.classList.remove('hidden');
+                        modal.classList.add('flex');
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+
+            closeModal.addEventListener('click', () => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // Form submission handling
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Integrate with EmailJS for actual email sending
+                    alert('Thank you for your message! I will get back to you soon.');
+                });
+            }
+
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.animate-slide-up, .animate-fade-in').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(50px)';
+                el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+                observer.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>
