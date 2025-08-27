@@ -1,0 +1,40 @@
+Build a modern, single-page, responsive portfolio website for **Vikas Giri – Graphic Designer & Video Editor**, inspired by the clean, minimalist style of **Bazil Hamard’s site (en.bazil.fr)**.
+
+**Design & Layout (Bazil-Inspired):**
+- Mono-colored minimalist header with logo (initials "VG") and minimal nav (Home / Work / Experience / Contact).
+- Simple “hero” statement: large bold heading (e.g., "Graphic Designer & Video Editor based in Mumbai") and supporting tagline.
+- Full-viewport hero section with a subtle background (solid color or soft overlay), minimal distractions.
+- Keep fonts elegant and minimal (e.g., sans-serif, light weight, spacious).
+- Use **black (#000000)** for text, **white (#ffffff)** for background blocks, and a **warm accent color** derived from your Behance branding for buttons or highlights (e.g., a pastel orange or mauve depending on your Behance palette).
+- Clean grid-based portfolio gallery showing project thumbnails in equal-sized squares, with simple hover effect (scale up slightly, subtle shadow).
+- Minimal footer with social icons only (Behance, LinkedIn, Instagram, email).
+
+**Sections:**
+1. **Hero** – Centered intro (“I’m Vikas Giri…”), two buttons: “View Portfolio” and “Download Resume.”
+2. **Portfolio / Work** – Grid of thumbnails from your Behance portfolio. Click opens details/redirects to Behance.
+3. **Experience & Clients** – Simple list or timeline: your roles, clients, and brief highlights.
+4. **Contact** – Short invite (“Let’s collaborate…”), email link, social icons.
+
+**UI Elements & Behavior:**
+- Smooth scroll from nav to sections.
+- Hover transitions for buttons and portfolio cards.
+- Keep site one-page, no unnecessary animations—maintain simplicity like Bazil.
+- Accent color for hover states and buttons, matching your Behance’s primary color.
+
+**Technical Stack:**
+- Use **React + TailwindCSS**.
+- Minimal dependency load—no heavy animations, mostly CSS transitions.
+- Responsive (mobile-first).
+- Light/dark mode optional but optional.
+
+**Brand Matching:**
+- Utilize your Behance brand colors—extract the main hue from your Behance portfolio (e.g., pastel orange or mauve) and use it consistently for buttons, hover states, link underlines, or section accent lines.
+
+The look and feel should exude **clarity, simplicity, and elegance**—like Bazil’s site—but personalized with your own branding and Behance-inspired color palette.
+
+---
+
+**Tip:** Before running this, decide on the **exact accent color** from your Behance (e.g., hex code), so it’s easy to plug into Tailwind config or CSS.
+
+Want me to generate the corresponding React + Tailwind starter code using this style? Happy to do it!
+::contentReference[oaicite:0]{index=0}

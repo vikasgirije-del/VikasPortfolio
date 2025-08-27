@@ -1,0 +1,49 @@
+Build a modern, responsive personal portfolio website for **Vikas Giri – Graphic Designer & Video Editor**.  
+
+🔹 **Design Style & 2025 UI Trends:**
+- Clean, minimal, grid-based layout with bold typography.  
+- Smooth micro-interactions & animations (Framer Motion or CSS animations).  
+- Soft pastel gradients with optional dark mode toggle.  
+- Rounded corners (2xl), glassmorphism sections, and subtle shadows for depth.  
+- Sticky navigation bar with smooth scroll and highlight of active section.  
+
+🔹 **Website Sections:**
+1. **Hero Section:**  
+   - Full-screen intro with name, title ("Graphic Designer & Video Editor"), short tagline ("Crafting impactful visuals for digital, print & motion").  
+   - Call-to-action buttons: "View Portfolio" & "Download Resume".  
+   - Background: animated gradient or abstract geometric visuals.  
+
+2. **About Me:**  
+   - Short bio (from CV: Master’s in Entertainment, Media & Advertising, 3+ years experience).  
+   - Skills grid (Branding, Typography, Motion Graphics, Signage Design, Adobe Suite, Video Editing).  
+
+3. **Portfolio Section:**  
+   - Grid/gallery of projects.  
+   - **Auto-fetch Behance projects** via Behance API OR embed portfolio link:  
+     https://www.behance.net/gallery/197985085/Portfolio-2025-Graphic-Design  
+   - On click → open modal with larger preview, description, and Behance "View More" link.  
+
+4. **Experience & Clients:**  
+   - Timeline format with logos + brief role highlights:  
+     - Mega Sign Pte. Ltd. (Signage, CNC, Laser artworks)  
+     - Filling The Blanks (Social media, banners, campaigns)  
+     - IELTSMaterial.com (Book covers, digital campaigns)  
+     - Curie Robotics (Packaging, educational design)  
+
+5. **Contact Section:**  
+   - Contact form (Name, Email, Message → send to Gmail with EmailJS).  
+   - Social links (LinkedIn, Behance, Instagram, Email).  
+
+🔹 **Technical Requirements:**  
+- Framework: **React + TailwindCSS** for styling.  
+- Use **Framer Motion** for animations.  
+- Responsive design (mobile-first).  
+- Deploy-ready (Replit hosting or export to Vercel/Netlify).  
+
+🔹 **Extra Features:**  
+- Light/Dark mode toggle.  
+- Floating “Hire Me” button linking to email.  
+- SEO optimized (meta tags: Graphic Designer, Video Editor, Portfolio, Remote Work).  
+- Favicon + simple logo initials (VG).  
+
+Make the overall feel professional yet creative, ensuring it highlights **design + motion graphics expertise** to impress recruiters for remote or on-location opportunities.
